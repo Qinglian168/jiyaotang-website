@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="metaTitle">江西吉药堂生物科技有限公司 - 保健用品专业制造商 | Jiangxi Jiyaotang Biotechnology Co., Ltd. - Health Care Products Manufacturer</title>
+<meta name="description" content="江西吉药堂生物科技有限公司专注于保健用品研发与制造，产品涵盖皮肤抗炎止痒、抗真菌、跌打损伤、肌肉关节镇痛、足部护理等九大类别，支持 OEM/ODM 定制服务。Jiangxi Jiyaotang Biotechnology Co., Ltd. specializes in topical health care products with 9 major categories and OEM/ODM service.">
+<style>
+  :root {
+    --primary: #0e7c5a;
+    --primary-dark: #0a5c43;
+    --primary-light: #e6f4ef;
+    --accent: #f5a623;
+    --text: #1f2937;
+    --text-muted: #6b7280;
+    --bg: #ffffff;
+    --bg-alt: #f7faf9;
+    --border: #e5e7eb;
+    --radius: 14px;
+    --shadow: 0 4px 24px rgba(14, 124, 90, .08);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.7;
+  }
+  a { text-decoration: none; color: inherit; }
+  img { max-width: 100%; }
+  .container { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
+
+  /* ===== Header ===== */
+  .topbar {
+    background: var(--primary-dark);
+    color: rgba(255,255,255,.85);
+    font-size: 13px;
+    padding: 6px 0;
+  }
+  .topbar .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 4px; }
+  .topbar a { color: #fff; font-weight: 600; }
+  header.site {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(255,255,255,.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-mark {
+    width: 42px; height: 42px; border-radius: 10px;
+    background: linear-gradient(135deg, var(--primary), #16a97a);
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-weight: 700; font-size: 18px;
+  }
+  .logo-name { font-size: 18px; font-weight: 700; color: var(--primary-dark); }
+  .logo-sub { font-size: 11px; color: var(--text-muted); letter-spacing: 1px; }
+  nav.menu { display: flex; gap: 26px; align-items: center; }
+  nav.menu a.navlink { font-size: 15px; font-weight: 500; color: var(--text); position: relative; padding: 6px 0; }
+  nav.menu a.navlink:hover { color: var(--primary); }
+  nav.menu a.navlink::after {
+    content: ""; position: absolute; left: 0; bottom: -2px;
+    width: 0; height: 2px; background: var(--primary); transition: width .25s;
+  }
+  nav.menu a.navlink:hover::after { width: 100%; }
+  .nav-cta {
+    background: var(--primary); color: #fff !important;
+    padding: 10px 22px; border-radius: 999px; font-weight: 600; font-size: 14px;
+    transition: background .2s;
+  }
+  .nav-cta:hover { background: var(--primary-dark); }
+  .menu-toggle { display: none; background: none; border: none; font-size: 26px; color: var(--primary-dark); cursor: pointer; }
+
+  /* ===== Language switcher ===== */
+  .lang-switch {
+    display: inline-flex; border: 1px solid var(--border); border-radius: 999px;
+    overflow: hidden; background: #fff; flex: none;
+  }
+  .lang-switch button {
+    border: none; background: transparent; cursor: pointer;
+    padding: 6px 14px; font-size: 13px; font-weight: 600;
+    color: var(--text-muted); font-family: inherit; transition: all .2s;
+  }
+  .lang-switch button.active { background: var(--primary); color: #fff; }
+
+  /* ===== Hero ===== */
+  .hero {
+    background:
+      radial-gradient(1000px 400px at 85% -10%, rgba(22,169,122,.18), transparent),
+      linear-gradient(120deg, #06392a 0%, #0e7c5a 55%, #12996f 100%);
+    color: #fff;
+    padding: 90px 0 110px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: ""; position: absolute; right: -120px; top: -80px;
+    width: 480px; height: 480px; border-radius: 50%;
+    background: rgba(255,255,255,.05);
+  }
+  .hero::after {
+    content: ""; position: absolute; right: 60px; bottom: -160px;
+    width: 320px; height: 320px; border-radius: 50%;
+    background: rgba(255,255,255,.06);
+  }
+  .hero .container { position: relative; z-index: 2; }
+  .hero-tag {
+    display: inline-block; background: rgba(255,255,255,.15);
+    border: 1px solid rgba(255,255,255,.3);
+    padding: 6px 16px; border-radius: 999px; font-size: 13px; margin-bottom: 22px;
+    letter-spacing: 1px;
+  }
+  .hero h1 { font-size: 44px; line-height: 1.25; font-weight: 700; max-width: 760px; }
+  .hero h1 em { font-style: normal; color: #ffd97a; }
+  .hero p { margin-top: 18px; font-size: 17px; color: rgba(255,255,255,.85); max-width: 660px; }
+  .hero-btns { margin-top: 34px; display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; padding: 13px 32px; border-radius: 999px;
+    font-weight: 600; font-size: 15px; transition: all .2s;
+  }
+  .btn-light { background: #fff; color: var(--primary-dark); }
+  .btn-light:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.2); }
+  .btn-ghost { border: 1.5px solid rgba(255,255,255,.6); color: #fff; }
+  .btn-ghost:hover { background: rgba(255,255,255,.12); }
+  .hero-stats { display: flex; gap: 48px; margin-top: 54px; flex-wrap: wrap; }
+  .hero-stat b { font-size: 32px; display: block; color: #ffd97a; }
+  .hero-stat span { font-size: 13px; color: rgba(255,255,255,.8); }
+
+  /* ===== Section head ===== */
+  section { padding: 84px 0; }
+  .sec-head { text-align: center; max-width: 660px; margin: 0 auto 54px; }
+  .sec-eyebrow {
+    color: var(--primary); font-weight: 700; font-size: 13px;
+    letter-spacing: 3px; text-transform: uppercase;
+  }
+  .sec-head h2 { font-size: 34px; margin: 10px 0 14px; color: #111827; }
+  .sec-head p { color: var(--text-muted); font-size: 16px; }
+
+  /* ===== Why us ===== */
+  .why { background: var(--bg-alt); }
+  .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .why-card {
+    background: #fff; border-radius: var(--radius); padding: 30px 26px;
+    border: 1px solid var(--border); transition: all .25s; position: relative;
+  }
+  .why-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--primary); }
+  .why-num {
+    position: absolute; top: 22px; right: 24px;
+    font-size: 40px; font-weight: 800; color: var(--primary-light);
+    line-height: 1;
+  }
+  .why-icon { width: 52px; height: 52px; border-radius: 12px; background: var(--primary-light); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+  .why-icon svg { width: 26px; height: 26px; stroke: var(--primary); }
+  .why-card h3 { font-size: 18px; margin-bottom: 8px; }
+  .why-card p { font-size: 14px; color: var(--text-muted); }
+
+  /* ===== Products ===== */
+  .prod-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .prod-card {
+    border-radius: var(--radius); overflow: hidden; background: #fff;
+    border: 1px solid var(--border); transition: all .25s; display: flex; flex-direction: column;
+  }
+  .prod-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+  .prod-banner {
+    height: 150px; display: flex; align-items: center; justify-content: center;
+    position: relative; color: #fff;
+  }
+  .prod-banner svg { width: 58px; height: 58px; opacity: .95; }
+  .prod-banner .cat-index {
+    position: absolute; top: 14px; left: 18px; font-size: 12px; font-weight: 700;
+    background: rgba(255,255,255,.22); padding: 3px 12px; border-radius: 999px; letter-spacing: 1px;
+  }
+  .prod-body { padding: 22px 24px 26px; flex: 1; display: flex; flex-direction: column; }
+  .prod-body h3 { font-size: 19px; margin-bottom: 8px; }
+  .prod-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+  .prod-tag {
+    font-size: 12.5px; color: var(--primary-dark); background: var(--primary-light);
+    padding: 4px 12px; border-radius: 999px;
+  }
+  .prod-link { margin-top: auto; padding-top: 16px; font-size: 14px; font-weight: 600; color: var(--primary); }
+
+  /* ===== About ===== */
+  .about { background: var(--bg-alt); }
+  .about-wrap { display: grid; grid-template-columns: 1.05fr .95fr; gap: 60px; align-items: center; }
+  .about-text h2 { font-size: 32px; margin-bottom: 18px; }
+  .about-text p { color: var(--text-muted); margin-bottom: 14px; font-size: 15.5px; }
+  .about-points { margin-top: 22px; display: grid; gap: 12px; }
+  .about-point { display: flex; gap: 10px; align-items: flex-start; font-size: 15px; }
+  .about-point .dot {
+    flex: none; width: 22px; height: 22px; border-radius: 50%;
+    background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center;
+    font-size: 12px; margin-top: 3px;
+  }
+  .about-visual {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    border-radius: 20px; color: #fff; padding: 44px 40px; position: relative; overflow: hidden;
+  }
+  .about-visual::before {
+    content: ""; position: absolute; right: -60px; bottom: -60px;
+    width: 220px; height: 220px; border-radius: 50%; background: rgba(255,255,255,.07);
+  }
+  .about-quote { font-size: 21px; font-weight: 700; line-height: 1.5; margin-bottom: 26px; }
+  .about-mini { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .about-mini b { font-size: 26px; color: #ffd97a; display: block; }
+  .about-mini span { font-size: 13px; color: rgba(255,255,255,.8); }
+
+  /* ===== Process ===== */
+  .proc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .proc-card {
+    text-align: center; padding: 34px 22px; border-radius: var(--radius);
+    background: #fff; border: 1px solid var(--border); transition: all .25s;
+  }
+  .proc-card:hover { border-color: var(--primary); box-shadow: var(--shadow); }
+  .proc-step {
+    width: 46px; height: 46px; margin: 0 auto 16px; border-radius: 50%;
+    background: var(--primary); color: #fff; font-weight: 700; font-size: 17px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .proc-card h3 { font-size: 17px; margin-bottom: 8px; }
+  .proc-card p { font-size: 13.5px; color: var(--text-muted); }
+
+  /* ===== Contact ===== */
+  .contact { background: linear-gradient(120deg, #06392a, #0e7c5a); color: #fff; }
+  .contact .sec-eyebrow { color: #ffd97a; }
+  .contact .sec-head h2 { color: #fff; }
+  .contact .sec-head p { color: rgba(255,255,255,.75); }
+  .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .contact-card {
+    background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.18);
+    border-radius: var(--radius); padding: 34px 26px; text-align: center; transition: all .25s;
+  }
+  .contact-card:hover { background: rgba(255,255,255,.14); }
+  .contact-icon { width: 54px; height: 54px; margin: 0 auto 16px; border-radius: 50%; background: rgba(255,255,255,.15); display: flex; align-items: center; justify-content: center; }
+  .contact-icon svg { width: 26px; height: 26px; stroke: #ffd97a; }
+  .contact-card h3 { font-size: 17px; margin-bottom: 8px; }
+  .contact-card p { font-size: 15px; color: rgba(255,255,255,.85); }
+  .contact-card a { color: #ffd97a; font-weight: 700; font-size: 20px; letter-spacing: 1px; }
+
+  /* ===== Footer ===== */
+  footer { background: #052b1f; color: rgba(255,255,255,.65); padding: 46px 0 26px; font-size: 14px; }
+  .foot-wrap { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; padding-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,.1); }
+  .foot-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .foot-logo .logo-mark { width: 36px; height: 36px; font-size: 15px; }
+  .foot-logo b { color: #fff; font-size: 17px; }
+  .foot-col h4 { color: #fff; font-size: 15px; margin-bottom: 14px; }
+  .foot-col a, .foot-col p { display: block; margin-bottom: 8px; color: rgba(255,255,255,.65); }
+  .foot-col a:hover { color: #ffd97a; }
+  .copyright { text-align: center; padding-top: 22px; font-size: 13px; color: rgba(255,255,255,.4); }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 1100px) {
+    nav.menu { gap: 18px; }
+    nav.menu a.navlink { font-size: 14px; }
+  }
+  @media (max-width: 960px) {
+    .why-grid, .prod-grid, .contact-grid { grid-template-columns: repeat(2, 1fr); }
+    .proc-grid { grid-template-columns: repeat(2, 1fr); }
+    .about-wrap { grid-template-columns: 1fr; gap: 36px; }
+    nav.menu {
+      display: none; position: absolute; top: 72px; left: 0; right: 0;
+      background: #fff; flex-direction: column; gap: 0; align-items: stretch;
+      border-bottom: 1px solid var(--border); box-shadow: 0 12px 30px rgba(0,0,0,.08);
+      padding: 10px 0;
+    }
+    nav.menu.open { display: flex; }
+    nav.menu a.navlink { padding: 13px 26px; }
+    .lang-switch { margin: 10px 26px; align-self: flex-start; }
+    .menu-toggle { display: block; }
+    .nav-cta { display: none; }
+    .hero h1 { font-size: 32px; }
+  }
+  @media (max-width: 600px) {
+    .why-grid, .prod-grid, .proc-grid, .contact-grid { grid-template-columns: 1fr; }
+    .hero { padding: 60px 0 80px; }
+    .hero-stats { gap: 28px; }
+    section { padding: 60px 0; }
+    .foot-wrap { grid-template-columns: 1fr; gap: 26px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Top bar -->
+<div class="topbar">
+  <div class="container">
+    <span data-i18n="topbar.slogan">专业保健用品制造 · 支持 OEM / ODM 定制</span>
+    <span><span data-i18n="topbar.hotline">咨询热线</span>：<a href="tel:+8613054454171">86-13054454171</a></span>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site">
+  <div class="container nav">
+    <a href="#top" class="logo">
+      <div class="logo-mark">吉</div>
+      <div>
+        <div class="logo-name">江西吉药堂生物科技有限公司</div>
+        <div class="logo-sub">JIANGXI JIYAOTANG BIOTECHNOLOGY CO., LTD.</div>
+      </div>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#top" class="navlink" data-i18n="nav.home">首页</a>
+      <a href="#why" class="navlink" data-i18n="nav.why">核心优势</a>
+      <a href="#products" class="navlink" data-i18n="nav.products">产品中心</a>
+      <a href="#about" class="navlink" data-i18n="nav.about">关于我们</a>
+      <a href="#process" class="navlink" data-i18n="nav.process">合作流程</a>
+      <a href="#contact" class="navlink" data-i18n="nav.contact">联系我们</a>
+      <div class="lang-switch" id="langSwitch">
+        <button type="button" data-lang="zh" class="active">中文</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+    </nav>
+    <a href="tel:+8613054454171" class="nav-cta" data-i18n="nav.cta">☎ 立即咨询</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="top">
+  <div class="container">
+    <span class="hero-tag" data-i18n="hero.tag">HEALTH CARE PRODUCTS MANUFACTURER</span>
+    <h1 data-i18n="hero.title">专注外用保健用品<br>守护每一寸<em>肌肤健康</em></h1>
+    <p data-i18n="hero.desc">江西吉药堂生物科技有限公司深耕皮肤护理与健康用品领域，产品覆盖皮肤抗炎止痒、抗真菌、跌打损伤、肌肉关节镇痛、足部护理等九大类别，为品牌商与渠道伙伴提供稳定可靠的供应链支持。</p>
+    <div class="hero-btns">
+      <a href="#products" class="btn btn-light" data-i18n="hero.btn1">浏览产品分类</a>
+      <a href="#contact" class="btn btn-ghost" data-i18n="hero.btn2">联系我们</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><b>9</b><span data-i18n="hero.stat1">大产品类别</span></div>
+      <div class="hero-stat"><b>60+</b><span data-i18n="hero.stat2">产品规格型号</span></div>
+      <div class="hero-stat"><b>OEM/ODM</b><span data-i18n="hero.stat3">贴牌定制服务</span></div>
+      <div class="hero-stat"><b>全网</b><span data-i18n="hero.stat4">销售渠道覆盖</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Why us -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-eyebrow">WHY CHOOSE US</div>
+      <h2 data-i18n="why.title">为什么选择我们</h2>
+      <p data-i18n="why.desc">从研发到交付，每一个环节都值得信赖</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-num">01</div>
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <h3 data-i18n="why.c1t">专业研发团队</h3>
+        <p data-i18n="why.c1d">资深研发人员专注外用制剂配方研究，持续迭代产品性能与使用体验。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">02</div>
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3 data-i18n="why.c2t">品质严格管控</h3>
+        <p data-i18n="why.c2d">从原料进厂到成品出库全流程质量监控，批批检验，安全可追溯。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">03</div>
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
+        <h3 data-i18n="why.c3t">品类齐全</h3>
+        <p data-i18n="why.c3d">九大产品类别、六十余种规格，一站式满足渠道与终端多样化需求。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">04</div>
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3 data-i18n="why.c4t">OEM / ODM 定制</h3>
+        <p data-i18n="why.c4d">支持定制配方、包装与品牌方案，助力客户快速打造自有品牌。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">05</div>
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+        <h3 data-i18n="why.c5t">高效物流交付</h3>
+        <p data-i18n="why.c5d">完善的仓储与发运体系，防挤压包装，保障货物完好、准时送达。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">06</div>
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+        <h3 data-i18n="why.c6t">贴心售后服务</h3>
+        <p data-i18n="why.c6d">专业客服一对一响应，市场指导与售后跟踪，合作省心放心。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Products -->
+<section id="products">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-eyebrow">PRODUCT CATEGORIES</div>
+      <h2 data-i18n="prod.title">产品中心</h2>
+      <p data-i18n="prod.desc">九大产品类别，覆盖家庭健康护理的常见需求</p>
+    </div>
+    <div class="prod-grid">
+
+      <div class="prod-card">
+        <div class="prod-banner" style="background:linear-gradient(135deg,#0e7c5a,#16a97a);">
+          <span class="cat-index">CATEGORY 01</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l2.5 2.5"/></svg>
+        </div>
+        <div class="prod-body">
+          <h3 data-i18n="p1.title">皮肤抗炎止痒</h3>
+          <div class="prod-tags">
+            <span class="prod-tag" data-i18n="p1.t1">湿疹</span>
+            <span class="prod-tag" data-i18n="p1.t2">皮炎</span>
+            <span class="prod-tag" data-i18n="p1.t3">过敏</span>
+            <span class="prod-tag" data-i18n="p1.t4">瘙痒</span>
+          </div>
+          <div class="prod-link" data-i18n="p1.link">舒缓不适 · 温和配方 →</div>
+        </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-banner" style="background:linear-gradient(135deg,#1173a3,#2aa1cf);">
+          <span class="cat-index">CATEGORY 02</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="6.5" r="2.5"/><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/><path d="M9 9l6 6M15 9l-6 6"/></svg>
+        </div>
+        <div class="prod-body">
+          <h3 data-i18n="p2.title">抗真菌外用药</h3>
+          <div class="prod-tags">
+            <span class="prod-tag" data-i18n="p2.t1">香港脚</span>
+            <span class="prod-tag" data-i18n="p2.t2">体癣</span>
+            <span class="prod-tag" data-i18n="p2.t3">股癣</span>
+            <span class="prod-tag" data-i18n="p2.t4">灰指甲</span>
+          </div>
+          <div class="prod-link" data-i18n="p2.link">针对性抑菌 · 深入渗透 →</div>
+        </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-banner" style="background:linear-gradient(135deg,#8a5cc7,#a97fe0);">
+          <span class="cat-index">CATEGORY 03</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 5.2L20 8l-4 4 1 5.8L12 15l-5 2.8L8 12 4 8l5.6-.8z"/></svg>
+        </div>
+        <div class="prod-body">
+          <h3 data-i18n="p3.title">抗菌外用药</h3>
+          <div class="prod-tags">
+            <span class="prod-tag" data-i18n="p3.t1">细菌性皮肤感染护理</span>
+          </div>
+          <div class="prod-link" data-i18n="p3.link">清洁防护 · 守护肌肤屏障 →</div>
+        </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-banner" style="background:linear-gradient(135deg,#d16b86,#e895a8);">
+          <span class="cat-index">CATEGORY 04</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <div class="prod-body">
+          <h3 data-i18n="p4.title">妇科外用药</h3>
+          <div class="prod-tags">
+            <span class="prod-tag" data-i18n="p4.t1">外阴护理</span>
+            <span class="prod-tag" data-i18n="p4.t2">抗真菌阴道用药</span>
+          </div>
+          <div class="prod-link" data-i18n="p4.link">温和呵护 · 私密健康 →</div>
+        </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-banner" style="background:linear-gradient(135deg,#c77817,#e8a13a);">
+          <span class="cat-index">CATEGORY 05</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4.5 4.5 0 0 0-6.4 6.4l-5 5V21h3.3l5-5a4.5 4.5 0 0 0 6.4-6.4l-3.2 3.2-2.3-2.3z"/></svg>
+        </div>
+        <div class="prod-body">
+          <h3 data-i18n="p5.title">跌打损伤外用药</h3>
+          <div class="prod-tags">
+            <span class="prod-tag" data-i18n="p5.t1">药油</span>
+            <span class="prod-tag" data-i18n="p5.t2">搽剂</span>
+            <span class="prod-tag" data-i18n="p5.t3">喷雾</span>
+            <span class="prod-tag" data-i18n="p5.t4">凝胶</span>
+            <span class="prod-tag" data-i18n="p5.t5">贴膏</span>
+          </div>
+          <div class="prod-link" data-i18n="p5.link">剂型丰富 · 舒缓活络 →</div>
+        </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-banner" style="background:linear-gradient(135deg,#2f8f6b,#4bb88c);">
+          <span class="cat-index">CATEGORY 06</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5h11a5 5 0 0 1 0 10h-11a5 5 0 0 1 0-10z"/><circle cx="6.5" cy="11.5" r="1.5"/><circle cx="17.5" cy="11.5" r="1.5"/></svg>
+        </div>
+        <div class="prod-body">
+          <h3 data-i18n="p6.title">肌肉关节镇痛</h3>
+          <div class="prod-tags">
+            <span class="prod-tag" data-i18n="p6.t1">腰背痛</span>
+            <span class="prod-tag" data-i18n="p6.t2">肩颈痛</span>
+            <span class="prod-tag" data-i18n="p6.t3">膝关节痛</span>
+          </div>
+          <div class="prod-link" data-i18n="p6.link">缓解酸痛 · 轻松自如 →</div>
+        </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-banner" style="background:linear-gradient(135deg,#5a7bd0,#7d9be8);">
+          <span class="cat-index">CATEGORY 07</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-6 4-12 10-14 3-1 6 0 6 3 0 5-6 11-12 11z"/><path d="M4 20c2-4 6-8 10-10"/></svg>
+        </div>
+        <div class="prod-body">
+          <h3 data-i18n="p7.title">鸡眼及角质护理</h3>
+          <div class="prod-tags">
+            <span class="prod-tag" data-i18n="p7.t1">鸡眼贴</span>
+            <span class="prod-tag" data-i18n="p7.t2">角质软化剂</span>
+            <span class="prod-tag" data-i18n="p7.t3">足部保护用品</span>
+          </div>
+          <div class="prod-link" data-i18n="p7.link">软化角质 · 细致呵护 →</div>
+        </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-banner" style="background:linear-gradient(135deg,#3ba3a0,#5cc4c0);">
+          <span class="cat-index">CATEGORY 08</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1"/><circle cx="15" cy="10" r="1"/><path d="M9.5 15.5c1.6 1 3.4 1 5 0"/></svg>
+        </div>
+        <div class="prod-body">
+          <h3 data-i18n="p8.title">痤疮及皮肤护理</h3>
+          <div class="prod-tags">
+            <span class="prod-tag" data-i18n="p8.t1">祛痘</span>
+            <span class="prod-tag" data-i18n="p8.t2">角质调理</span>
+            <span class="prod-tag" data-i18n="p8.t3">保湿修复</span>
+          </div>
+          <div class="prod-link" data-i18n="p8.link">净痘焕肤 · 水润修护 →</div>
+        </div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-banner" style="background:linear-gradient(135deg,#6b8f3d,#8fb85e);">
+          <span class="cat-index">CATEGORY 09</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h8l2 6c0 4-2.5 8-6 12-3.5-4-6-8-6-12z"/><path d="M12 3v18"/></svg>
+        </div>
+        <div class="prod-body">
+          <h3 data-i18n="p9.title">足部护理</h3>
+          <div class="prod-tags">
+            <span class="prod-tag" data-i18n="p9.t1">抗真菌产品</span>
+            <span class="prod-tag" data-i18n="p9.t2">足粉</span>
+            <span class="prod-tag" data-i18n="p9.t3">除臭及干燥护理产品</span>
+          </div>
+          <div class="prod-link" data-i18n="p9.link">清爽干爽 · 步履轻盈 →</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+  <div class="container about-wrap">
+    <div class="about-text">
+      <div class="sec-eyebrow">OUR STORY</div>
+      <h2 data-i18n="about.title">关于江西吉药堂生物科技有限公司</h2>
+      <p data-i18n="about.p1">江西吉药堂生物科技有限公司是一家专注于外用保健用品研发、生产与销售的企业，总部位于江西省吉安市吉水县城西工业区。多年来，我们始终秉承“品质求生存、信誉求发展”的经营理念，深耕皮肤护理与健康用品领域。</p>
+      <p data-i18n="about.p2">产品线覆盖皮肤抗炎止痒、抗真菌、抗菌、妇科护理、跌打损伤、肌肉关节镇痛、鸡眼及角质护理、痤疮护理与足部护理九大类别，满足不同人群、不同场景的健康护理需求。</p>
+      <div class="about-points">
+        <div class="about-point"><span class="dot">✓</span><span data-i18n="about.pt1">严格的原料筛选与生产过程监控体系</span></div>
+        <div class="about-point"><span class="dot">✓</span><span data-i18n="about.pt2">完善的服务流程与售后跟踪指导</span></div>
+        <div class="about-point"><span class="dot">✓</span><span data-i18n="about.pt3">为合作伙伴量身打造专属品牌产品线</span></div>
+      </div>
+    </div>
+    <div class="about-visual">
+      <div class="about-quote" data-i18n="about.quote">“品质求生存，信誉求发展。”</div>
+      <p style="font-size:14.5px;color:rgba(255,255,255,.8);margin-bottom:30px;" data-i18n="about.quotedesc">以严谨的工艺生产与监控，用心为每一位客户创造价值。</p>
+      <div class="about-mini">
+        <div><b>9</b><span data-i18n="about.m1">产品类别体系</span></div>
+        <div><b>60+</b><span data-i18n="about.m2">产品规格型号</span></div>
+        <div><b>1v1</b><span data-i18n="about.m3">客户定制服务</span></div>
+        <div><b>全年</b><span data-i18n="about.m4">稳定供应保障</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section id="process">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-eyebrow">WORK PHILOSOPHY</div>
+      <h2 data-i18n="proc.title">合作流程</h2>
+      <p data-i18n="proc.desc">规范高效的四步服务，让合作简单可靠</p>
+    </div>
+    <div class="proc-grid">
+      <div class="proc-card">
+        <div class="proc-step">1</div>
+        <h3 data-i18n="proc.s1t">需求沟通评估</h3>
+        <p data-i18n="proc.s1d">接收并评估项目概况，明确产品需求与定制方向。</p>
+      </div>
+      <div class="proc-card">
+        <div class="proc-step">2</div>
+        <h3 data-i18n="proc.s2t">调研详细规划</h3>
+        <p data-i18n="proc.s2d">市场调研与方案细化，制定科学的产品与生产计划。</p>
+      </div>
+      <div class="proc-card">
+        <div class="proc-step">3</div>
+        <h3 data-i18n="proc.s3t">生产部署执行</h3>
+        <p data-i18n="proc.s3d">严格按标准组织生产，全程质量监控，按时完成交付。</p>
+      </div>
+      <div class="proc-card">
+        <div class="proc-step">4</div>
+        <h3 data-i18n="proc.s4t">验收交付跟踪</h3>
+        <p data-i18n="proc.s4d">项目验收与移交，并提供后续市场指导与售后跟踪。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-eyebrow">CONTACT US</div>
+      <h2 data-i18n="contact.title">联系我们</h2>
+      <p data-i18n="contact.desc">期待与您携手，共创健康事业</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <h3 data-i18n="contact.phone">咨询热线</h3>
+        <p><a href="tel:+8613054454171">86-13054454171</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h3 data-i18n="contact.addr">公司地址</h3>
+        <p data-i18n="contact.addrv">江西省吉安市吉水县城西工业区</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3 data-i18n="contact.hours">服务时间</h3>
+        <p data-i18n="contact.hoursv">周一至周日 9:00 - 18:00</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="foot-wrap">
+      <div>
+        <div class="foot-logo">
+          <div class="logo-mark">吉</div>
+          <b>江西吉药堂生物科技有限公司</b>
+        </div>
+        <p data-i18n="foot.desc">专注外用保健用品的研发、生产与销售，覆盖皮肤护理、抗真菌、跌打损伤、足部护理等九大类别，支持 OEM / ODM 定制。</p>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot.cattitle">产品分类</h4>
+        <a href="#products" data-i18n="foot.c1">皮肤抗炎止痒</a>
+        <a href="#products" data-i18n="foot.c2">抗真菌 / 抗菌外用药</a>
+        <a href="#products" data-i18n="foot.c3">跌打损伤 / 肌肉关节镇痛</a>
+        <a href="#products" data-i18n="foot.c4">足部及角质护理</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot.conttitle">联系方式</h4>
+        <p><span data-i18n="foot.phone">电话</span>：86-13054454171</p>
+        <p><span data-i18n="foot.addr">地址</span>：<span data-i18n="foot.addrv">江西省吉安市吉水县城西工业区</span></p>
+        <p><span data-i18n="foot.hours">服务时间</span>：<span data-i18n="foot.hoursv">9:00 - 18:00</span></p>
+      </div>
+    </div>
+    <div class="copyright" data-i18n="foot.copy">© 2026 江西吉药堂生物科技有限公司 版权所有</div>
+  </div>
+</footer>
+
+<script>
+/* ===== 双语字典 / Bilingual dictionary ===== */
+const I18N = {
+  zh: {
+    "meta.title": "江西吉药堂生物科技有限公司 - 保健用品专业制造商 | 皮肤护理 · 外用健康产品",
+    "meta.desc": "江西吉药堂生物科技有限公司专注于保健用品研发与制造，产品涵盖皮肤抗炎止痒、抗真菌、跌打损伤、肌肉关节镇痛、足部护理等九大类别，支持 OEM/ODM 定制服务。",
+    "topbar.slogan": "专业保健用品制造 · 支持 OEM / ODM 定制",
+    "topbar.hotline": "咨询热线",
+    "nav.home": "首页", "nav.why": "核心优势", "nav.products": "产品中心",
+    "nav.about": "关于我们", "nav.process": "合作流程", "nav.contact": "联系我们", "nav.cta": "☎ 立即咨询",
+    "hero.tag": "HEALTH CARE PRODUCTS MANUFACTURER",
+    "hero.title": "专注外用保健用品<br>守护每一寸<em>肌肤健康</em>",
+    "hero.desc": "江西吉药堂生物科技有限公司深耕皮肤护理与健康用品领域，产品覆盖皮肤抗炎止痒、抗真菌、跌打损伤、肌肉关节镇痛、足部护理等九大类别，为品牌商与渠道伙伴提供稳定可靠的供应链支持。",
+    "hero.btn1": "浏览产品分类", "hero.btn2": "联系我们",
+    "hero.stat1": "大产品类别", "hero.stat2": "产品规格型号", "hero.stat3": "贴牌定制服务", "hero.stat4": "销售渠道覆盖",
+    "why.title": "为什么选择我们", "why.desc": "从研发到交付，每一个环节都值得信赖",
+    "why.c1t": "专业研发团队", "why.c1d": "资深研发人员专注外用制剂配方研究，持续迭代产品性能与使用体验。",
+    "why.c2t": "品质严格管控", "why.c2d": "从原料进厂到成品出库全流程质量监控，批批检验，安全可追溯。",
+    "why.c3t": "品类齐全", "why.c3d": "九大产品类别、六十余种规格，一站式满足渠道与终端多样化需求。",
+    "why.c4t": "OEM / ODM 定制", "why.c4d": "支持定制配方、包装与品牌方案，助力客户快速打造自有品牌。",
+    "why.c5t": "高效物流交付", "why.c5d": "完善的仓储与发运体系，防挤压包装，保障货物完好、准时送达。",
+    "why.c6t": "贴心售后服务", "why.c6d": "专业客服一对一响应，市场指导与售后跟踪，合作省心放心。",
+    "prod.title": "产品中心", "prod.desc": "九大产品类别，覆盖家庭健康护理的常见需求",
+    "p1.title": "皮肤抗炎止痒", "p1.t1": "湿疹", "p1.t2": "皮炎", "p1.t3": "过敏", "p1.t4": "瘙痒", "p1.link": "舒缓不适 · 温和配方 →",
+    "p2.title": "抗真菌外用药", "p2.t1": "香港脚", "p2.t2": "体癣", "p2.t3": "股癣", "p2.t4": "灰指甲", "p2.link": "针对性抑菌 · 深入渗透 →",
+    "p3.title": "抗菌外用药", "p3.t1": "细菌性皮肤感染护理", "p3.link": "清洁防护 · 守护肌肤屏障 →",
+    "p4.title": "妇科外用药", "p4.t1": "外阴护理", "p4.t2": "抗真菌阴道用药", "p4.link": "温和呵护 · 私密健康 →",
+    "p5.title": "跌打损伤外用药", "p5.t1": "药油", "p5.t2": "搽剂", "p5.t3": "喷雾", "p5.t4": "凝胶", "p5.t5": "贴膏", "p5.link": "剂型丰富 · 舒缓活络 →",
+    "p6.title": "肌肉关节镇痛", "p6.t1": "腰背痛", "p6.t2": "肩颈痛", "p6.t3": "膝关节痛", "p6.link": "缓解酸痛 · 轻松自如 →",
+    "p7.title": "鸡眼及角质护理", "p7.t1": "鸡眼贴", "p7.t2": "角质软化剂", "p7.t3": "足部保护用品", "p7.link": "软化角质 · 细致呵护 →",
+    "p8.title": "痤疮及皮肤护理", "p8.t1": "祛痘", "p8.t2": "角质调理", "p8.t3": "保湿修复", "p8.link": "净痘焕肤 · 水润修护 →",
+    "p9.title": "足部护理", "p9.t1": "抗真菌产品", "p9.t2": "足粉", "p9.t3": "除臭及干燥护理产品", "p9.link": "清爽干爽 · 步履轻盈 →",
+    "about.title": "关于江西吉药堂生物科技有限公司",
+    "about.p1": "江西吉药堂生物科技有限公司是一家专注于外用保健用品研发、生产与销售的企业，总部位于江西省吉安市吉水县城西工业区。多年来，我们始终秉承“品质求生存、信誉求发展”的经营理念，深耕皮肤护理与健康用品领域。",
+    "about.p2": "产品线覆盖皮肤抗炎止痒、抗真菌、抗菌、妇科护理、跌打损伤、肌肉关节镇痛、鸡眼及角质护理、痤疮护理与足部护理九大类别，满足不同人群、不同场景的健康护理需求。",
+    "about.pt1": "严格的原料筛选与生产过程监控体系",
+    "about.pt2": "完善的服务流程与售后跟踪指导",
+    "about.pt3": "为合作伙伴量身打造专属品牌产品线",
+    "about.quote": "“品质求生存，信誉求发展。”",
+    "about.quotedesc": "以严谨的工艺生产与监控，用心为每一位客户创造价值。",
+    "about.m1": "产品类别体系", "about.m2": "产品规格型号", "about.m3": "客户定制服务", "about.m4": "稳定供应保障",
+    "proc.title": "合作流程", "proc.desc": "规范高效的四步服务，让合作简单可靠",
+    "proc.s1t": "需求沟通评估", "proc.s1d": "接收并评估项目概况，明确产品需求与定制方向。",
+    "proc.s2t": "调研详细规划", "proc.s2d": "市场调研与方案细化，制定科学的产品与生产计划。",
+    "proc.s3t": "生产部署执行", "proc.s3d": "严格按标准组织生产，全程质量监控，按时完成交付。",
+    "proc.s4t": "验收交付跟踪", "proc.s4d": "项目验收与移交，并提供后续市场指导与售后跟踪。",
+    "contact.title": "联系我们", "contact.desc": "期待与您携手，共创健康事业",
+    "contact.phone": "咨询热线", "contact.addr": "公司地址", "contact.addrv": "江西省吉安市吉水县城西工业区",
+    "contact.hours": "服务时间", "contact.hoursv": "周一至周日 9:00 - 18:00",
+    "foot.desc": "专注外用保健用品的研发、生产与销售，覆盖皮肤护理、抗真菌、跌打损伤、足部护理等九大类别，支持 OEM / ODM 定制。",
+    "foot.cattitle": "产品分类", "foot.c1": "皮肤抗炎止痒", "foot.c2": "抗真菌 / 抗菌外用药",
+    "foot.c3": "跌打损伤 / 肌肉关节镇痛", "foot.c4": "足部及角质护理",
+    "foot.conttitle": "联系方式", "foot.phone": "电话", "foot.addr": "地址", "foot.addrv": "江西省吉安市吉水县城西工业区",
+    "foot.hours": "服务时间", "foot.hoursv": "9:00 - 18:00", "foot.copy": "© 2026 江西吉药堂生物科技有限公司 版权所有"
+  },
+  en: {
+    "meta.title": "Jiangxi Jiyaotang Biotechnology Co., Ltd. - Health Care Products Manufacturer | Skin Care & Topical Wellness",
+    "meta.desc": "Jiangxi Jiyaotang Biotechnology Co., Ltd. specializes in topical health care products, covering 9 major categories including anti-itch and anti-inflammatory skin care, antifungal care, injury care, muscle & joint pain relief and foot care. OEM/ODM supported.",
+    "topbar.slogan": "Professional Health Care Products Manufacturer · OEM / ODM Supported",
+    "topbar.hotline": "Hotline",
+    "nav.home": "Home", "nav.why": "Why Us", "nav.products": "Products",
+    "nav.about": "About Us", "nav.process": "Process", "nav.contact": "Contact", "nav.cta": "☎ Contact Us",
+    "hero.tag": "HEALTH CARE PRODUCTS MANUFACTURER",
+    "hero.title": "Topical Health Care Products<br>Protecting Every Inch of <em>Your Skin</em>",
+    "hero.desc": "Jiangxi Jiyaotang Biotechnology Co., Ltd. is dedicated to skin care and wellness products, covering nine major categories from anti-itch and anti-inflammatory care to antifungal, injury care, muscle & joint pain relief and foot care — delivering a reliable supply chain for brand owners and channel partners.",
+    "hero.btn1": "Browse Categories", "hero.btn2": "Contact Us",
+    "hero.stat1": "Product Categories", "hero.stat2": "Product SKUs", "hero.stat3": "Private Label Service", "hero.stat4": "Sales Channel Coverage",
+    "why.title": "Why Choose Us", "why.desc": "Every step from R&D to delivery is trustworthy",
+    "why.c1t": "Professional R&D Team", "why.c1d": "Experienced researchers focus on topical formulation, continuously improving product performance and user experience.",
+    "why.c2t": "Strict Quality Control", "why.c2d": "Full-process quality monitoring from raw materials to finished goods, batch-by-batch inspection with full traceability.",
+    "why.c3t": "Complete Product Range", "why.c3d": "Nine categories and over 60 specifications to satisfy diverse channel and retail demands in one place.",
+    "why.c4t": "OEM / ODM Service", "why.c4d": "Customized formula, packaging and branding solutions to help clients build their own product lines fast.",
+    "why.c5t": "Efficient Delivery", "why.c5d": "Well-established warehousing and shipping system with anti-crush packaging for safe, on-time delivery.",
+    "why.c6t": "Thoughtful After-Sales", "why.c6d": "One-to-one customer service, market guidance and after-sales follow-up for worry-free cooperation.",
+    "prod.title": "Product Center", "prod.desc": "Nine product categories covering everyday family health care needs",
+    "p1.title": "Anti-inflammatory & Anti-itch Skin Care", "p1.t1": "Eczema", "p1.t2": "Dermatitis", "p1.t3": "Allergy", "p1.t4": "Itching", "p1.link": "Soothing relief · gentle formula →",
+    "p2.title": "Antifungal Topical Care", "p2.t1": "Athlete's Foot", "p2.t2": "Ringworm (Tinea Corporis)", "p2.t3": "Jock Itch (Tinea Cruris)", "p2.t4": "Nail Fungus", "p2.link": "Targeted action · deep penetration →",
+    "p3.title": "Antibacterial Topical Care", "p3.t1": "Bacterial Skin Infection Care", "p3.link": "Cleansing protection · skin barrier care →",
+    "p4.title": "Feminine Intimate Care", "p4.t1": "External Intimate Care", "p4.t2": "Antifungal Vaginal Care", "p4.link": "Gentle care · intimate wellness →",
+    "p5.title": "Bruise & Injury Topical Care", "p5.t1": "Medicated Oil", "p5.t2": "Liniment", "p5.t3": "Spray", "p5.t4": "Gel", "p5.t5": "Plaster", "p5.link": "Multiple dosage forms · soothing relief →",
+    "p6.title": "Muscle & Joint Pain Relief", "p6.t1": "Lower Back Pain", "p6.t2": "Neck & Shoulder Pain", "p6.t3": "Knee Joint Pain", "p6.link": "Ease soreness · move freely →",
+    "p7.title": "Corn & Callus Care", "p7.t1": "Corn Plaster", "p7.t2": "Keratolytic Agent", "p7.t3": "Foot Protection Products", "p7.link": "Soften calluses · gentle care →",
+    "p8.title": "Acne & Skin Care", "p8.t1": "Acne Care", "p8.t2": "Exfoliating Care", "p8.t3": "Moisturizing Repair", "p8.link": "Clear & renew · hydrating repair →",
+    "p9.title": "Foot Care", "p9.t1": "Antifungal Products", "p9.t2": "Foot Powder", "p9.t3": "Deodorizing & Drying Care", "p9.link": "Fresh & dry · light on your feet →",
+    "about.title": "About Jiangxi Jiyaotang Biotechnology Co., Ltd.",
+    "about.p1": "Jiangxi Jiyaotang Biotechnology Co., Ltd. is an enterprise dedicated to the R&D, manufacturing and sales of topical health care products, headquartered in the West Industrial Zone, Jishui County, Ji'an City, Jiangxi Province. Over the years we have upheld the business philosophy of \"Quality for survival, reputation for development\".",
+    "about.p2": "Our product line covers nine categories: anti-inflammatory and anti-itch skin care, antifungal, antibacterial, feminine care, injury care, muscle & joint pain relief, corn and callus care, acne care and foot care — meeting health care needs of different groups and scenarios.",
+    "about.pt1": "Strict raw material selection and production process monitoring",
+    "about.pt2": "Comprehensive service process with after-sales guidance",
+    "about.pt3": "Tailor-made exclusive brand product lines for partners",
+    "about.quote": "\"Quality for survival, reputation for development.\"",
+    "about.quotedesc": "With rigorous production and monitoring, we create value for every customer with care.",
+    "about.m1": "Product Categories", "about.m2": "Product SKUs", "about.m3": "Customized Service", "about.m4": "Stable Year-round Supply",
+    "proc.title": "Cooperation Process", "proc.desc": "A standardized four-step service that makes cooperation simple and reliable",
+    "proc.s1t": "Requirement Evaluation", "proc.s1d": "Receive and evaluate the project overview, clarify product needs and customization direction.",
+    "proc.s2t": "Research & Planning", "proc.s2d": "Market research and detailed planning to build a scientific product and production plan.",
+    "proc.s3t": "Production & Deployment", "proc.s3d": "Manufactured strictly to standards with full quality monitoring and on-time delivery.",
+    "proc.s4t": "Acceptance & Handover", "proc.s4d": "Project acceptance and handover, plus ongoing market guidance and after-sales follow-up.",
+    "contact.title": "Contact Us", "contact.desc": "Looking forward to working with you for a healthier future",
+    "contact.phone": "Hotline", "contact.addr": "Company Address", "contact.addrv": "West Industrial Zone, Jishui County, Ji'an City, Jiangxi Province",
+    "contact.hours": "Business Hours", "contact.hoursv": "Monday - Sunday 9:00 - 18:00",
+    "foot.desc": "Specializing in the R&D, manufacturing and sales of topical health care products across nine categories including skin care, antifungal, injury care and foot care. OEM / ODM supported.",
+    "foot.cattitle": "Product Categories", "foot.c1": "Anti-inflammatory & Anti-itch", "foot.c2": "Antifungal / Antibacterial Care",
+    "foot.c3": "Injury Care / Pain Relief", "foot.c4": "Foot & Callus Care",
+    "foot.conttitle": "Contact", "foot.phone": "Tel", "foot.addr": "Address", "foot.addrv": "West Industrial Zone, Jishui County, Ji'an City, Jiangxi Province",
+    "foot.hours": "Business Hours", "foot.hoursv": "9:00 - 18:00", "foot.copy": "© 2026 Jiangxi Jiyaotang Biotechnology Co., Ltd. All rights reserved."
+  }
+};
+
+function setLang(lang) {
+  const dict = I18N[lang] || I18N.zh;
+  document.documentElement.lang = (lang === 'zh') ? 'zh-CN' : 'en';
+  document.querySelectorAll('[data-i18n]').forEach(function (el) {
+    const key = el.getAttribute('data-i18n');
+    if (dict[key] !== undefined) el.innerHTML = dict[key];
+  });
+  const t = document.getElementById('metaTitle');
+  const d = document.querySelector('meta[name="description"]');
+  if (t) t.textContent = dict['meta.title'];
+  if (d) d.setAttribute('content', dict['meta.desc']);
+  document.querySelectorAll('#langSwitch button').forEach(function (b) {
+    b.classList.toggle('active', b.getAttribute('data-lang') === lang);
+  });
+  try { localStorage.setItem('jxpharma_lang', lang); } catch (e) {}
+}
+
+document.getElementById('langSwitch').addEventListener('click', function (e) {
+  const btn = e.target.closest('button[data-lang]');
+  if (btn) setLang(btn.getAttribute('data-lang'));
+});
+
+(function init() {
+  let lang = 'zh';
+  try { lang = localStorage.getItem('jxpharma_lang') || 'zh'; } catch (e) {}
+  setLang(lang);
+})();
+
+/* Mobile menu */
+const toggle = document.getElementById('menuToggle');
+const menu = document.getElementById('menu');
+toggle.addEventListener('click', () => menu.classList.toggle('open'));
+menu.querySelectorAll('a.navlink').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+</script>
+</body>
+</html>
