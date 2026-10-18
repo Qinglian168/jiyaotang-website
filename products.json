@@ -1,0 +1,196 @@
+{
+  "updatedAt": "2026-10-18",
+  "categories": [
+    {
+      "id": "anti-itch",
+      "zh": "皮肤抗炎止痒",
+      "en": "Anti-inflammatory & Anti-itch",
+      "color": ["#0e7c5a", "#16a97a"]
+    },
+    {
+      "id": "antifungal",
+      "zh": "抗真菌外用药",
+      "en": "Antifungal Topical",
+      "color": ["#1173a3", "#2aa1cf"]
+    },
+    {
+      "id": "antibacterial",
+      "zh": "抗菌外用药",
+      "en": "Antibacterial Topical",
+      "color": ["#8a5cc7", "#a97fe0"]
+    },
+    {
+      "id": "gynecological",
+      "zh": "妇科外用药",
+      "en": "Gynecological Topical",
+      "color": ["#d16b86", "#e895a8"]
+    },
+    {
+      "id": "injury",
+      "zh": "跌打损伤外用药",
+      "en": "Injury & Bruise Care",
+      "color": ["#c77817", "#e8a13a"]
+    },
+    {
+      "id": "pain-relief",
+      "zh": "肌肉关节镇痛",
+      "en": "Muscle & Joint Pain Relief",
+      "color": ["#2f8f6b", "#4bb88c"]
+    },
+    {
+      "id": "callus",
+      "zh": "鸡眼及角质护理",
+      "en": "Corn & Callus Care",
+      "color": ["#5a7bd0", "#7d9be8"]
+    },
+    {
+      "id": "acne",
+      "zh": "痤疮及皮肤护理",
+      "en": "Acne & Skin Care",
+      "color": ["#3ba3a0", "#5cc4c0"]
+    },
+    {
+      "id": "foot-care",
+      "zh": "足部护理",
+      "en": "Foot Care",
+      "color": ["#6b8f3d", "#8fb85e"]
+    }
+  ],
+  "products": [
+    {
+      "id": "jt-001",
+      "category": "anti-itch",
+      "visible": true,
+      "name": { "zh": "皮肤抗炎止痒系列", "en": "Anti-inflammatory & Anti-itch Series" },
+      "desc": {
+        "zh": "舒缓不适 · 温和配方，适用于湿疹、皮炎等引起的皮肤瘙痒问题。",
+        "en": "Gentle, soothing formulas for itching caused by eczema, dermatitis and skin allergies."
+      },
+      "tags": {
+        "zh": ["湿疹", "皮炎", "过敏", "瘙痒"],
+        "en": ["Eczema", "Dermatitis", "Allergy", "Itching"]
+      },
+      "image": ""
+    },
+    {
+      "id": "jt-002",
+      "category": "antifungal",
+      "visible": true,
+      "name": { "zh": "抗真菌外用系列", "en": "Antifungal Topical Series" },
+      "desc": {
+        "zh": "针对性抑菌 · 深入渗透，用于香港脚、体癣、灰指甲等真菌感染护理。",
+        "en": "Targeted antifungal action with deep penetration for athlete's foot, ringworm and nail fungus."
+      },
+      "tags": {
+        "zh": ["香港脚", "体癣", "股癣", "灰指甲"],
+        "en": ["Athlete's foot", "Ringworm", "Jock itch", "Nail fungus"]
+      },
+      "image": ""
+    },
+    {
+      "id": "jt-003",
+      "category": "antibacterial",
+      "visible": true,
+      "name": { "zh": "抗菌外用系列", "en": "Antibacterial Topical Series" },
+      "desc": {
+        "zh": "清洁防护 · 守护肌肤屏障，适用于细菌性皮肤感染的日常护理。",
+        "en": "Cleansing protection that helps defend the skin barrier against bacterial infection."
+      },
+      "tags": {
+        "zh": ["细菌性皮肤感染护理"],
+        "en": ["Bacterial skin infection care"]
+      },
+      "image": ""
+    },
+    {
+      "id": "jt-004",
+      "category": "gynecological",
+      "visible": true,
+      "name": { "zh": "妇科外用系列", "en": "Gynecological Topical Series" },
+      "desc": {
+        "zh": "温和呵护 · 私密健康，涵盖外阴护理与抗真菌阴道用药。",
+        "en": "Gentle intimate care covering vulvar care and antifungal vaginal preparations."
+      },
+      "tags": {
+        "zh": ["外阴护理", "抗真菌阴道用药"],
+        "en": ["Vulvar care", "Antifungal vaginal care"]
+      },
+      "image": ""
+    },
+    {
+      "id": "jt-005",
+      "category": "injury",
+      "visible": true,
+      "name": { "zh": "跌打损伤外用系列", "en": "Injury & Bruise Care Series" },
+      "desc": {
+        "zh": "剂型丰富 · 舒缓活络，提供药油、搽剂、喷雾、凝胶、贴膏等多种剂型。",
+        "en": "Multiple dosage forms — medicated oil, liniment, spray, gel and patch — to soothe and activate."
+      },
+      "tags": {
+        "zh": ["药油", "搽剂", "喷雾", "凝胶", "贴膏"],
+        "en": ["Medicated oil", "Liniment", "Spray", "Gel", "Patch"]
+      },
+      "image": ""
+    },
+    {
+      "id": "jt-006",
+      "category": "pain-relief",
+      "visible": true,
+      "name": { "zh": "肌肉关节镇痛系列", "en": "Muscle & Joint Pain Relief Series" },
+      "desc": {
+        "zh": "缓解酸痛 · 轻松自如，针对腰背、肩颈、膝关节等部位的酸痛不适。",
+        "en": "Relieves soreness in the lower back, neck, shoulders and knees so you can move freely."
+      },
+      "tags": {
+        "zh": ["腰背痛", "肩颈痛", "膝关节痛"],
+        "en": ["Back pain", "Neck & shoulder pain", "Knee pain"]
+      },
+      "image": ""
+    },
+    {
+      "id": "jt-007",
+      "category": "callus",
+      "visible": true,
+      "name": { "zh": "鸡眼及角质护理系列", "en": "Corn & Callus Care Series" },
+      "desc": {
+        "zh": "软化角质 · 细致呵护，含鸡眼贴、角质软化剂与足部保护用品。",
+        "en": "Softens hardened skin with corn plasters, keratolytics and foot protection products."
+      },
+      "tags": {
+        "zh": ["鸡眼贴", "角质软化剂", "足部保护用品"],
+        "en": ["Corn plaster", "Keratolytics", "Foot protection"]
+      },
+      "image": ""
+    },
+    {
+      "id": "jt-008",
+      "category": "acne",
+      "visible": true,
+      "name": { "zh": "痤疮及皮肤护理系列", "en": "Acne & Skin Care Series" },
+      "desc": {
+        "zh": "净痘焕肤 · 水润修护，覆盖祛痘、角质调理与保湿修复需求。",
+        "en": "Clarifying, exfoliating and hydrating care for acne-prone skin."
+      },
+      "tags": {
+        "zh": ["祛痘", "角质调理", "保湿修复"],
+        "en": ["Acne treatment", "Exfoliation", "Hydration & repair"]
+      },
+      "image": ""
+    },
+    {
+      "id": "jt-009",
+      "category": "foot-care",
+      "visible": true,
+      "name": { "zh": "足部护理系列", "en": "Foot Care Series" },
+      "desc": {
+        "zh": "清爽干爽 · 步履轻盈，含抗真菌产品、足粉与除臭干燥护理产品。",
+        "en": "Keeps feet fresh and dry with antifungals, foot powders and deodorizing care."
+      },
+      "tags": {
+        "zh": ["抗真菌产品", "足粉", "除臭及干燥护理产品"],
+        "en": ["Antifungal", "Foot powder", "Deodorizing & drying care"]
+      },
+      "image": ""
+    }
+  ]
+}
